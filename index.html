@@ -1,0 +1,43 @@
+<html>
+
+<head>
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <style>
+    .missing {
+      background-color: pink;
+    }
+    #urls img {
+      height: 18px;
+    }
+    td { 
+      padding: 10px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <section class="container">
+
+  <table id="urls" class="table-striped">
+  </table>
+
+  </section>
+
+  <script src="urls.json"></script>
+  <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+  $(function() {
+    $(tweets).each(function(i, t) {
+    var tr = $('<tr><td class="text-right">' + t.tweet_count + '</td><td><a href="' + t.url + '">' + t.title + '</a></td><td><a href="https://web.archive.org/web/*/' + t.url + '"><img src="https://archive-it.org/static/icons/logo_IA.png"></a></tr>');
+      if (! t.archived) {
+        tr.attr('class', 'missing');
+      }
+      $('#urls').append(tr);
+    });
+  });
+  </script>
+
+</body>
+
+</html>
