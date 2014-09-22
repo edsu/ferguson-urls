@@ -27,6 +27,7 @@
   <script src="urls.json"></script>
   <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
   <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+  <script>
   $(function() {
     $(tweets).each(function(i, t) {
     var tr = $('<tr><td class="text-right">' + t.tweet_count + '</td><td><a href="' + t.url + '">' + t.title + '</a></td><td><a href="https://web.archive.org/web/*/' + t.url + '"><img src="https://archive-it.org/static/icons/logo_IA.png"></a></tr>');
