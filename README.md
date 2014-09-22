@@ -6,7 +6,7 @@ This report and underlying data represent 417,972 unique URLs that were in
 [here](http://inkdroid.org/journal/2014/08/30/a-ferguson-twitter-archive/).
 
 The URLs themselves were extracted from the collected Twitter data, unshortened
-(using [unshrtn](http://github.com/edsu/unshrtn) and then loaded into 
+(using [unshrtn](http://github.com/edsu/unshrtn)) and then loaded into 
 [redis](http://redis.io) in order to count them.
 
 The tweets.tsv.gz here is a tab separated file that includes the tweeted 
