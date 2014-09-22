@@ -235,7 +235,7 @@ var tweets = [
     ], 
     "archived": true, 
     "tweet_count": 8851, 
-    "title": ""
+    "title": "Holocaust Survivor Hedy Epstein, Arrested in Ferguson Protest, Says Racism Is Alive in America"
   }, 
   {
     "url": "http://news.investors.com/ibd-editorials/082214-714519-radical-doj-unit-investigates-ferguson-shooting.htm", 
@@ -728,7 +728,7 @@ var tweets = [
     ], 
     "archived": false, 
     "tweet_count": 4776, 
-    "title": null
+    "title": ""
   }, 
   {
     "url": "http://www.youtube.com/watch?v=tJduZmDuOJc&feature=youtu.be", 
