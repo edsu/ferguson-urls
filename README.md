@@ -18,6 +18,6 @@ the data found in urls.json, which is generated with urls.py.
 
 ## License
 
-# Code and data are licensed with [CC-SA](https://creativecommons.org/licenses/by-sa/2.0/)
+# Code and data are licensed with [CC-BY](https://creativecommons.org/licenses/by/2.0/)
 
 
