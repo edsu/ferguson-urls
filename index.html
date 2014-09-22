@@ -37,7 +37,7 @@
   <script>
   $(function() {
     $(tweets).each(function(i, t) {
-    var tr = $('<tr><td class="text-right">' + t.tweet_count + '</td><td><a href="' + t.url + '">' + t.title + '</a></td><td> <a href="https://web.archive.org/web/*/' + t.url + '"><img src="https://archive-it.org/static/icons/logo_IA.png"><a href="https://twitter.com/search?q=' + t.url + '"><img src="https://g.twimg.com/Twitter_logo_blue.png"></a></tr>');
+    var tr = $('<tr><td class="text-right">' + t.tweet_count + '</td><td><a href="' + t.url + '">' + t.title + '</a></td><td> <a href="https://web.archive.org/web/*/' + t.url + '"><img src="https://archive-it.org/static/icons/logo_IA.png">&nbsp;<a href="https://twitter.com/search?q=' + t.url + '"><img src="https://g.twimg.com/Twitter_logo_blue.png"></a></tr>');
       if (! t.archived) {
         tr.attr('class', 'missing');
       }
