@@ -32,7 +32,7 @@
     $(run);
 
     function run() {
-      var v = youtube[int(Math.random() * youtube.length)];
+      var v = youtube[Math.floor(Math.random() * youtube.length)];
       $("#video").text(v);
       setTimeout(run, 5000);
     }
