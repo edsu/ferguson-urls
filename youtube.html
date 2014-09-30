@@ -51,18 +51,16 @@
         }
       });
 
-      player.loadVideoByUrl({
-        mediaContentUrl: 'http://www.youtube.com/watch?v=UQnNBpW6AoA'
-      });
     }
 
     function onPlayerReady(event) {
       event.target.setVolume(100);
-      event.target.playVideo();
+      player.loadVideoByUrl
+        mediaContentUrl: 'http://www.youtube.com/watch?v=UQnNBpW6AoA'
+      });
     }
 
     function onError(event) {
-      console.log(event.data);
       if (event.data == 100) {
         alert("ruhroh");
       }
