@@ -47,13 +47,23 @@
         events: {
           'onReady': onPlayerReady,
           'onError': onError,
-          //'onStateChange': onPlayerStateChange
+          'onStateChange': onPlayerStateChange
         }
       });
 
     }
 
     function onPlayerReady(event) {
+      playRandomVideo();
+    }
+
+    function onStateChanged(event) {
+      if (event.data == YT.PlayerState.PAUSED or event.data == YT.PlayerState.ENDED) {
+        playRandomVideo();
+      }
+    }
+
+    function playRandomVideo() {
       var videoId = getVideoId();
       player.loadVideoById(videoId);
       player.playVideo();
