@@ -57,7 +57,9 @@
     }
 
     function onError(event) {
-      alert("ruhroh");
+      if (event.data == 100) {
+        alert("ruhroh");
+      }
     }
 
     $(run);
