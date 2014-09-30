@@ -84,7 +84,7 @@
         console.log(v.url);
         var match = v.url.match(/youtube.com\/v\/(.{11})/);
         if (! match) {
-          match = v.url.match(/youtube.com\/watch?v=(.{11})/);
+          match = v.url.match(/youtube.com\/watch\?v=(.{11})/);
         }
         console.log(match);
         if (match && ! idsSeen[match[1]]) {
