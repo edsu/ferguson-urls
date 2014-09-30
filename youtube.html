@@ -29,11 +29,36 @@
   <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
   <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
   <script>
+
+    // youtube loading silliness 
+    var tag = document.createElement('script');
+    tag.src = "https://www.youtube.com/iframe_api";
+    var firstScriptTag = document.getElementsByTagName('script')[0];
+    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+    var player;
+    function onYouTubeIframeAPIReady() {
+      player = new YT.Player('video', {
+        height: '390',
+        width: '640',
+        videoId: 'M7lc1UVf-VE',
+        events: {
+          'onReady': onPlayerReady,
+          //'onStateChange': onPlayerStateChange
+        }
+      });
+    }
+
+    function onPlayerReady(event) {
+      event.target.setVolume(100);
+      event.target.playVideo();
+    }
+
     $(run);
 
     function run() {
       var v = youtube[Math.floor(Math.random() * youtube.length)];
-      $("#video").text(v.count + ' ' + v.url);
+      //$("#video").text(v.tweet_count + ' ' + v.url);
       setTimeout(run, 5000);
     }
 
