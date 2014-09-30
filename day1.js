@@ -9,7 +9,7 @@ var tweets = [
     "url": "http://ago.mo.gov/VehicleStops/2013/reports/161.pdf", 
     "archived": true, 
     "tweet_count": "1538", 
-    "title": null
+    "title": "RACIAL PROFILING DATA/2013"
   }, 
   {
     "url": "http://www.cnn.com/2014/08/11/us/missouri-teen-shooting/index.html", 
@@ -117,7 +117,7 @@ var tweets = [
     "url": "http://us.cnn.com/2014/08/11/us/missouri-teen-shooting/index.html", 
     "archived": true, 
     "tweet_count": "428", 
-    "title": null
+    "title": "Gunshots, tear gas in Missouri town where police shot teen"
   }, 
   {
     "url": "http://instagram.com/p/ri2QPfOXvj/", 
@@ -137,6 +137,12 @@ var tweets = [
     "tweet_count": "408", 
     "title": "Getting the protestors to sit down. Put hands up in protest. #ferguson"
   }, 
+  {
+    "url": "http://colorlines.com/archives/2014/08/police_officer_calls_ferguson_protestors_animals.html", 
+    "archived": false, 
+    "tweet_count": "399", 
+    "title": "Police Officer Calls Ferguson Protestors ‘Animals’"
+  },
   {
     "url": "http://www.broadcastify.com/listen/feed/2418/web", 
     "archived": true, 
@@ -257,12 +263,7 @@ var tweets = [
     "tweet_count": "242", 
     "title": "Ferguson Violence: Protesters Warn \"The Revolution Won't Be Televised\" - 'Rubber Bullets & Tear Gas' Update | Zero Hedge"
   }, 
-  {
-    "url": "http://fw.to/CnlvyDL", 
-    "archived": false, 
-    "tweet_count": "233", 
-    "title": null
-  }, 
+
   {
     "url": "https://vine.co/v/MYuFtQqTn0T", 
     "archived": false, 
@@ -303,7 +304,7 @@ var tweets = [
     "url": "http://www.cnn.com/2014/08/11/us/missouri-ferguson-michael-brown-what-we-know/index.html?hpt=hp_c2", 
     "archived": false, 
     "tweet_count": "202", 
-    "title": null
+    "title": "What we know about Michael Brown's shooting"
   }, 
   {
     "url": "https://vine.co/v/MVYMirFDWOW", 
@@ -382,12 +383,6 @@ var tweets = [
     "archived": true, 
     "tweet_count": "169", 
     "title": "KTVI Footage: Video appears to show looting taking place in Ferguson, Missouri as police arrive on the scene"
-  }, 
-  {
-    "url": "http://fw.to/kuoFFVf", 
-    "archived": false, 
-    "tweet_count": "166", 
-    "title": null
   }, 
   {
     "url": "https://vine.co/v/MVYdTaUBPul", 
