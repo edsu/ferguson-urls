@@ -1,4 +1,4 @@
-[
+var youtube = [
   {
     "url": "http://www.youtube.com/watch?v=6Q0wA4", 
     "tweet_count": 1
@@ -56707,4 +56707,4 @@
     "url": "http://www.youtube.com/watch?v=nAh9y1k6HqE&feature=youtu.be", 
     "tweet_count": 9485
   }
-]
+];
