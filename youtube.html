@@ -45,6 +45,7 @@
         videoId: '6Q0wA4',
         events: {
           'onReady': onPlayerReady,
+          'onError': onError,
           //'onStateChange': onPlayerStateChange
         }
       });
@@ -53,6 +54,10 @@
     function onPlayerReady(event) {
       event.target.setVolume(100);
       event.target.playVideo();
+    }
+
+    function onError(event) {
+      alert("ruhroh");
     }
 
     $(run);
