@@ -1,16 +1,10 @@
 <html>
 
   <head>
-  <title>Random Ferguson YouTube Videos</title>
+  <title>14,177 Ferguson YouTube Videos</title>
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
   <style>
-    #urls img {
-      height: 18px;
-    }
-    td { 
-      padding: 10px;
-    }
-    footer {
+    header {
       text-align: center;
       margin: 15px;
     }
@@ -22,7 +16,12 @@
   <a href="http://github.com/edsu/ferguson-urls"><img style="position: absolute; top: 0; right: 0; border: 0; z-index: 3;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png" alt="Fork me on GitHub"></a>
 
   <section class="container">
-    <div id="video"></div>
+    <header class="row">
+      <h3>14,177 (Random) Ferguson YouTube Videos</h3>
+    </header>
+    <div class="row">
+      <div id="video"></div>
+    </div>
   </section>
 
   <script src="youtube.js"></script>
@@ -39,8 +38,8 @@
     var player;
     function onYouTubeIframeAPIReady() {
       player = new YT.Player('video', {
-        height: '720',
-        width: '1000',
+        height: '620',
+        width: '800',
         events: {
           'onReady': onPlayerReady,
           'onError': onError,
