@@ -67,11 +67,13 @@
 
     //$(run);
 
+    var idsSeen = {};
     function getVideoId() {
       while (true) {
         var v = youtube[Math.floor(Math.random() * youtube.length)];
         var match = v.url.match(/youtube.com\/v\/(.{11})$/);
-        if (match) {
+        if (match && ! idsSeen[match[1]]) {
+          idsSeen[match[1]] = true;
           return match[1];
         }
       }
