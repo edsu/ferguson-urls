@@ -43,13 +43,15 @@
         width: '1000',
         //videoId: 'M7lc1UVf-VE',
         //videoId: '6Q0wA4',
-        videoId: 'AzXFggVvA6U',
+        //videoId: 'AzXFggVvA6U',
         events: {
           'onReady': onPlayerReady,
           'onError': onError,
           //'onStateChange': onPlayerStateChange
         }
       });
+
+      player.loadVideoByUrl('http://www.youtube.com/watch?v=UQnNBpW6AoA');
     }
 
     function onPlayerReady(event) {
