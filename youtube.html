@@ -55,9 +55,7 @@
 
     function onPlayerReady(event) {
       event.target.setVolume(100);
-      player.loadVideoByUrl({
-        mediaContentUrl: 'http://www.youtube.com/watch?v=UQnNBpW6AoA'
-      });
+      console.log(getVideoId());
     }
 
     function onError(event) {
@@ -66,12 +64,16 @@
       }
     }
 
-    $(run);
+    //$(run);
 
-    function run() {
-      var v = youtube[Math.floor(Math.random() * youtube.length)];
-      //$("#video").text(v.tweet_count + ' ' + v.url);
-      setTimeout(run, 5000);
+    function getVideoId() {
+      while (true) {
+        var v = youtube[Math.floor(Math.random() * youtube.length)];
+        var match = v.url.match('/youtube.com\/v\/(.{11})$/);
+        if (match) {
+          return match[1];
+        }
+      }
     }
 
   </script>
