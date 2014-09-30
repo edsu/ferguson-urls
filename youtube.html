@@ -58,7 +58,7 @@
     }
 
     function onStateChanged(event) {
-      if (event.data == YT.PlayerState.PAUSED or event.data == YT.PlayerState.ENDED) {
+      if (event.data == YT.PlayerState.PAUSED || event.data == YT.PlayerState.ENDED) {
         playRandomVideo();
       }
     }
