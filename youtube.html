@@ -51,7 +51,9 @@
         }
       });
 
-      player.loadVideoByUrl('http://www.youtube.com/watch?v=UQnNBpW6AoA');
+      player.loadVideoByUrl({
+        mediaContentUrl: 'http://www.youtube.com/watch?v=UQnNBpW6AoA'
+      });
     }
 
     function onPlayerReady(event) {
