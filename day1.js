@@ -1,4 +1,4 @@
-[
+var tweets = [
   {
     "url": "http://m.stltoday.com/news/multimedia/video-man-justifies-the-looting-in-ferguson/html_7699be22-bb74-5d4f-aa49-fcc46f5cb025.html?mobile_touch=true", 
     "archived": true, 
@@ -605,4 +605,4 @@
     "tweet_count": "3277", 
     "title": "PzFeed  \u00bb Page not found"
   }
-]
+];
