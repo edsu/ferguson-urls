@@ -54,8 +54,9 @@
     }
 
     function onPlayerReady(event) {
-      event.target.setVolume(100);
-      console.log(getVideoId());
+      var videoId = getVideoId());
+      player.loadVideoById(videoId);
+      player.playVideo();
     }
 
     function onError(event) {
