@@ -57,7 +57,7 @@
       playRandomVideo();
     }
 
-    function onStateChanged(event) {
+    function onPlayerStateChanged(event) {
       if (event.data == YT.PlayerState.PAUSED || event.data == YT.PlayerState.ENDED) {
         playRandomVideo();
       }
