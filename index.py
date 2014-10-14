@@ -39,7 +39,7 @@ for line in gzip.open("urls.tsv.gz"):
         "archived": archived(cols[0]),
         "title": title(cols[0])
     }
-    urls.insert(0, r)
+    urls.append(r)
     if len(urls) > LIMIT:
         break
 
