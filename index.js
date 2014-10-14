@@ -1,4 +1,4 @@
-[
+var tweets = [
   {
     "url": "http://new.livestream.com/accounts/9035483/events/3271930", 
     "tweet_sample": [
@@ -1716,4 +1716,4 @@
     "tweet_count": 3162, 
     "title": "GET THE FUCK OUT OF HERE - YouTube"
   }
-]
+];
