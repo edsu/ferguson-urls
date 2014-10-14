@@ -983,7 +983,7 @@ var tweets = [
     ], 
     "archived": false, 
     "tweet_count": 4776, 
-    "title": null
+    "title": "Commonalities and Differences Between Christianity and Islam"
   }, 
   {
     "url": "http://www.youtube.com/watch?v=tJduZmDuOJc&feature=youtu.be", 
@@ -1017,7 +1017,7 @@ var tweets = [
     ], 
     "archived": true, 
     "tweet_count": 4749, 
-    "title": null
+    "title": "Christianity: The Original and the Present Reality"
   }, 
   {
     "url": "https://medium.com/message/ferguson-is-also-a-net-neutrality-issue-6d2f3db51eb0", 
