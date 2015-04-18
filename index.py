@@ -42,7 +42,7 @@ def main():
             "archived": archived(cols[0]),
             "title": title(cols[0])
         }
-        urls.insert(0, r)
+        urls.append(r)
         if len(urls) > LIMIT:
             break
     open('urls.json', 'w').write(json.dumps(urls, indent=2))

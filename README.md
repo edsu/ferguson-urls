@@ -9,7 +9,7 @@ The URLs themselves were extracted from the collected Twitter data, unshortened
 (using [unshrtn](http://github.com/edsu/unshrtn)) and then loaded into 
 [redis](http://redis.io) in order to count them.
 
-The tweets.tsv.gz here is a tab separated file that includes the tweeted 
+The urls.tsv.gz here is a tab separated file that includes the tweeted 
 URL followed by the tweet URLs for any tweets that mentioned it.
 
 The index.html file is a report of the top 100 URLs tweeted, which indicates

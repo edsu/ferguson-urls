@@ -1,0 +1,57 @@
+<html>
+
+  <head>
+  <title></title>
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <style>
+    body {
+      text-align: center;
+    }
+    header {
+      margin: 15px;
+    }
+    footer {
+      margin: 15px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <a href="http://github.com/edsu/ferguson-urls"><img style="position: absolute; top: 0; right: 0; border: 0; z-index: 3;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png" alt="Fork me on GitHub"></a>
+
+  <section class="container">
+    <header class="row">
+      <h3>4,706 (Random) Ferguson Vine Videos</h3>
+    </header>
+    <div class="row">
+      <div id="video"></div>
+    </div>
+    <footer>
+    These Vine videos were posted to Twitter with the ferguson hashtag.
+    </footer>
+  </section>
+  <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+  <script>
+
+    function playRandomVideo() {
+      var url = getRandomUrl();
+      var iframe = '<iframe class="vine-embed" src="https://vine.co/v/bjHh0zHdgZT/embed/postcard" width="600" height="600" frameborder="0"></iframe><script async src="//platform.vine.co/static/scripts/embed.js" charset="utf-8"></script>';
+      $('#video').append(iframe);
+    }
+
+    function getRandomUrl() {
+      while (true) {
+        var url = vine[Math.floor(Math.random() * vine.length)].url;
+        if (! idsSeen[url]) {
+          idsSeen[url] = true;
+        }
+        return url;
+      }
+    }
+
+  </script>
+</body>
+
+</html>
